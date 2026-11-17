@@ -1,0 +1,84 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "CFMOTO RIDE account",
+        "description": "Log in with the same account as the CFMOTO RIDE app. Your bike needs an active T-Box.",
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "area": "Country code (as registered, e.g. PT)",
+          "base_url": "API server"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-enter CFMOTO password",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Login failed: check email, password and country code.",
+      "cannot_connect": "Could not reach the CFMOTO cloud.",
+      "no_vehicles": "Login worked, but no real (non-demo) bike is bound to this account."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Re-authentication successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "range": {
+        "name": "Fuel range"
+      },
+      "fuel_level": {
+        "name": "Fuel level"
+      },
+      "odometer": {
+        "name": "Odometer"
+      },
+      "distance_this_month": {
+        "name": "Distance this month"
+      },
+      "battery_voltage": {
+        "name": "Battery voltage"
+      },
+      "last_update": {
+        "name": "Last update"
+      },
+      "sim_remaining": {
+        "name": "T-Box SIM remaining"
+      },
+      "signal": {
+        "name": "Cellular signal"
+      },
+      "speed": {
+        "name": "Speed"
+      },
+      "average_speed": {
+        "name": "Average speed"
+      },
+      "fuel_consumption": {
+        "name": "Fuel consumption"
+      },
+      "riding_time_this_month": {
+        "name": "Riding time this month"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "T-Box online"
+      },
+      "ignition": {
+        "name": "Ignition"
+      }
+    },
+    "device_tracker": {
+      "location": {
+        "name": "Location"
+      }
+    }
+  }
+}

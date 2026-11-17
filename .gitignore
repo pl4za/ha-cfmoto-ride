@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+._*
+*.env
+credentials*
+# personal dashboard snippet, not part of the integration
+cfmoto_card.yaml
